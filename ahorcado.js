@@ -1,0 +1,2 @@
+function agregarPalabra(palabra) {
+}
