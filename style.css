@@ -1,12 +1,13 @@
 body{
   background-color: #E5E5E5;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
 }
 .titulo {
   padding: 15px;
   width: 30vw;
   margin: auto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 32px;
   line-height: 150%;
   color: #0A3871;
@@ -50,4 +51,17 @@ body{
   border-radius: 0px;
   color: #0A3871;
 
+}
+canvas{
+  color: red;
+}
+.principal{
+  display: inline;
+}
+.juego-iniciado{
+  display: none;
+}
+.nuevo-canva{
+  width: 300px;
+  height: 500px;
 }
