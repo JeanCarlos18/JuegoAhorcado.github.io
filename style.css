@@ -1,67 +1,271 @@
-body{
-  background-color: #E5E5E5;
-  font-family: Inter;
-  font-style: normal;
-  font-weight: normal;
-}
-.titulo {
-  padding: 15px;
-  width: 30vw;
-  margin: auto;
-  font-size: 32px;
-  line-height: 150%;
-  color: #0A3871;
-
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.btn {
-  border: 0;
-  color: white;
-  font-weight: bold;
-  background-color: blue;
-  padding: 10px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border-radius: 0.5em;
+.btns-inicio
+{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.text-input {
-  border-radius: 0.5em;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  display: block;
-  padding: 0.5em;
-  width: 30%;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.btn-iniciar
+{
+    width: 317px;
+    height: 105px;
+    border-radius: 24px;
+    margin: 24px;
+    font-size: 18px;
+    color: white;
+    background-color: #0A3871;
 }
-.pie-de-pagina{
-  text-align: center;
-}
-.logo{
-  position: absolute;
-  left: 36.67%;
-  right: 37.43%;
-  top: 0%;
-  bottom: 0%;
-  height: 48px;
-  width: 31.085588455200195px;
-  left: 44px;
-  top: 0px;
-  border-radius: 0px;
-  color: #0A3871;
 
+.btn-iniciar:hover
+{
+    cursor: pointer;
 }
-canvas{
-  color: red;
+
+.btn-agregar
+{
+    width: 280px;
+    height: 67px;
+    border-radius: 24px;
+    margin: 24px;
+    font-size: 16px;
+    color: darkblue;
+    border: 1px solid #0A3871;
 }
-.principal{
-  display: inline;
+
+.btn-agregar:hover
+{
+    cursor: pointer;
 }
-.juego-iniciado{
-  display: none;
+
+.palabra-nueva
+{
+    display: none;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
-.nuevo-canva{
-  width: 300px;
-  height: 500px;
+
+.campo
+{
+    width: auto;
+    height: 512px;
+}
+
+.input-palabra-nueva
+{
+    width: 299px;
+    height: 48px;
+    margin-bottom: 363px;
+    font-size: 32px;
+    color: darkblue;
+    border: none;
+}
+
+.alerta
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 12px;
+    color: gray;
+    opacity: 0.8;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.alerta img
+{
+    width: 16px;
+    margin-right: 10px;
+}
+
+.btn-guardar-empezar
+{
+    width: 332px;
+    height: 67px;
+    color: white;
+    border-radius: 24px;
+    background-color: #0A3871;
+    font-size: 16px;
+    border: none;
+}
+
+.btn-guardar-empezar:hover
+{
+    cursor: pointer;
+}
+
+.btn-cancelar
+{
+    width: 332px;
+    height: 67px;
+    font-size: 16px;
+    color: #0A3871;
+    border-radius: 24px;
+    border: 1px solid #0A3871;
+}
+
+.btn-cancelar:hover
+{
+    cursor: pointer;
+}
+
+.juego
+{
+    display: none;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.dibujo
+{
+    width: 294px;
+    height: 360px;
+}
+
+.entrada-juego
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 464px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.letras
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    font-size: 48px;
+    color: #0A3871;
+}
+
+.letra
+{
+    text-align: center;
+    width: 40px;
+}
+
+.lineas
+{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    color: #0A3871;
+}
+
+.linea
+{
+    width: 40px;
+    height: 4px;
+    background-color: #0A3871;
+    border-radius: 8px;
+}
+
+.letras-no
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 24px;
+    color: #0A3871;
+    opacity: 0.8;
+}
+
+.letra-no
+{
+    padding: 0 5px;
+}
+
+.btns-juego
+{
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    height: auto;
+}
+
+.btn-nuevojuego
+{
+    width: 332px;
+    height: 67px;
+    border: none;
+    border-radius: 24px;
+    background-color: #0A3871;
+    color: white;
+    font-size: 16px;
+}
+
+.btn-nuevojuego:hover
+{
+    cursor: pointer;
+}
+
+.btn-desistir
+{
+    width: 332px;
+    height: 67px;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    font-size: 16px;
+}
+
+.btn-desistir:hover
+{
+    cursor: pointer;
+}
+
+.mensaje
+{
+    margin: 20px;
+    font-size: 24px;
+}
+
+#mobile
+{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.mobile
+{
+    display: none;
+}
+
+@media (max-width: 800px) {
+    #mobile
+    {
+        display: flex;
+        width: auto;
+        height: 20px;
+    }
+
+    .mobile
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 15px;
+    }
 }

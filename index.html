@@ -11,20 +11,13 @@
     <header>
       <h1 class="logo">a</h1>
     </header>
-    <section class="incio">
-    <div class="principal">
-    <div style="text-align:center; margin: 50px 0px;">
-      <h1 class="titulo">Ahorcado</h1>
-      <button class="btn" id="iniciar-juego">INICIAR JUEGO</button>
-    </div>
-    <div style="text-align:center">
-      <input class="text-input" type="text" id="input-nueva-palabra" placeholder="Escriba una nueva palabra">
-      <button class="btn" id="nueva-palabra">AGREGAR PALABRA</button> 
-    </div>
-    </div>
+
+    <section class="btns-inicio">
+      <button class="btn-iniciar">Iniciar juego</button>
+      <button class="btn-agregar">Agregar nueva palabra</button>
     </section>
 
-    <section class="palabra-nueva" style="display: flex;">
+    <section class="palabra-nueva">
       <section class="campo">
           <input class="input-palabra-nueva" type="text" placeholder="Ingrese una palabra">
           <section>
@@ -35,46 +28,54 @@
               </section>
           </section>
       </section>
+  </section>
+  <section class="letras-no">
+                    
+  </section>
+  <section class="juego">
+    <section class="dibujo">
+        <canvas id="dibujo" height="360px" width="294px"></canvas>
+        <section class="letras">
+    <section class="entrada-juego">
+      <section class="lineas">
+        <span class="linea linea-1"></span>
+        <span class="linea linea-2"></span>
+        <span class="linea linea-3"></span>
+        <span class="linea linea-4"></span>
+        <span class="linea linea-5"></span>
+        <span class="linea linea-6"></span>
+        <span class="linea linea-7"></span>
+        <span class="linea linea-8"></span>
+      </section>
+    </section>
+    </section>
+    </section>
+    </section>
+    <section class="mensaje"></section>
+
+    <section class="btns-juego">
+        <button class="btn-nuevojuego">Nuevo juego</button>
+        <button class="btn-desistir">Desistir</button>
     </section>
 
-    <section class="juego" style="display: none;">
-      <section class="dibujo">
-          <canvas id="dibujo" height="360px" width="294px"></canvas>
-      </section>
-      <section class="entrada-juego">
-          <section class="letras">
-              
-          </section>
-          <section class="lineas">
-              <span class="linea linea-1"></span>
-              <span class="linea linea-2"></span>
-              <span class="linea linea-3"></span>
-              <span class="linea linea-4"></span>
-              <span class="linea linea-5"></span>
-              <span class="linea linea-6"></span>
-              <span class="linea linea-7"></span>
-              <span class="linea linea-8"></span>
-          </section>
-          <section class="letras-no">
-              
-          </section>
-      </section>
-      <section class="mensaje">
-          
-      </section>
-      <section class="btns-juego">
-          <button class="btn-nuevojuego">Nuevo juego</button>
-          <button class="btn-desistir">Desistir</button>
-      </section>
+    <section>
+      <input id="mobile" type="text" placeholder="Ingrese las letras">
+      <label for="mobile">
+          <button class="mobile">Toque para abrir Teclado</button>
+      </label>
   </section>
 
-    <script type="text/javascript" src="canvas.js"></script>
-    <script type="text/javascript" src="ahorcado.js"></script>
+
     <footer>
       <div class="pie-de-pagina">
       <p> Jean Carlos Villarroel - Alura</p>
     </div>
-  </div>
     </footer>
+    <script src="agregarPalabra.js"></script>
+    <script src="dibujarHorca.js"></script>
+    <script src="dibujarLetraIncorrecta.js"></script>
+    <script src="escogerMensaje.js"></script>
+    <script src="canvas"></script>
+    
   </body>
 </html>
