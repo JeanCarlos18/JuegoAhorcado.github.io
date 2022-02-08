@@ -1,3 +1,18 @@
+header{
+    color: #0A3871;
+    position: absolute;
+    left: 36.67%;
+    right: 37.43%;
+    top: 0%;
+    bottom: 0%;
+    height: 48px;
+    width: 31.085588455200195px;
+    left: 44px;
+    top: 0px;
+    border-radius: 0px;
+
+}
+
 *
 {
     box-sizing: border-box;
@@ -5,6 +20,7 @@
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 .btns-inicio
 {
@@ -65,32 +81,44 @@
 
 .input-palabra-nueva
 {
+    color: #0A3871;
     width: 299px;
     height: 48px;
-    margin-bottom: 363px;
+    left: 376px;
+    top: 256px;
+    
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
     font-size: 32px;
-    color: darkblue;
-    border: none;
+    line-height: 150%;
 }
+.alerta{
+    height: 18px;
+    width: 91px;
+    left: 24px;
+    top: 0px;
+    border-radius: nullpx;
+    position: static;
+    width: 500px;
+    height: 18px;
+    left: 24px;
+    top: 0px;
 
-.alerta
-{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 12px;
-    color: gray;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 150%;
+    color: #495057;
+
     opacity: 0.8;
-    font-size: 12px;
-    margin-bottom: 8px;
-}
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
 
-.alerta img
-{
-    width: 16px;
-    margin-right: 10px;
 }
-
 .btn-guardar-empezar
 {
     width: 332px;
